@@ -65,6 +65,11 @@ function Calendar() {
     );
   };
 
+  // Function to navigate to today's date
+  const goToToday = () => {
+    setCurrentDate(new Date());
+  };
+
   return (
     <div className="calendar">
       <div className="month-header">
@@ -76,6 +81,7 @@ function Calendar() {
           })}
         </h2>
         <button onClick={goToNextMonth}>Next</button>
+        <button onClick={goToToday}>Today</button> {/* Today button */}
       </div>
       {/* Render the calendar grid */}
       <div className="calendar-grid">{renderCalendarGrid()}</div>

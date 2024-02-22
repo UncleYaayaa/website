@@ -24,6 +24,12 @@
   cursor: pointer;
 }
 
+/* Today button */
+.month-header button.today {
+  background-color: #28a745;
+  margin-left: 10px; /* Adjust as needed */
+}
+
 /* Calendar grid */
 .calendar-grid {
   display: grid;
