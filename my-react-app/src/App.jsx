@@ -1,7 +1,15 @@
 import Calendar from "./Calendar.jsx";
+import SocialMediaCard from "./SocialMediaCard.jsx";
+import TaskPopUp from "./TaskPopUp.jsx";
 
 function App() {
-  return <Calendar></Calendar>;
+  return (
+    <>
+      <Calendar />
+      <SocialMediaCard />
+      <TaskPopUp />
+    </>
+  );
 }
 
 export default App;
