@@ -23,3 +23,27 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Calendar grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+}
+
+/* Calendar day */
+.calendar-day {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Highlight selected day */
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Disable days from previous and next months */
+.disabled {
+  color: #ccc;
+}
