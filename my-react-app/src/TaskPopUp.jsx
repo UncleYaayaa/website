@@ -30,6 +30,33 @@ function TaskPopUp({ socialMedia, onSave }) {
       console.log("Please fill in all fields");
     }
   };
+
+  return (
+    <div className="task-popup">
+      <h3>Create Task for {socialMedia}</h3>
+      {/* Task input field */}
+      <input
+        type="text"
+        value={taskInput}
+        onChange={(e) => setTaskInput(e.target.value)}
+        placeholder="Enter task..."
+      />
+      {/* Date picker */}
+      <input
+        type="date"
+        value={taskDate}
+        onChange={(e) => setTaskDate(e.target.value)}
+      />
+      {/* Time picker */}
+      <input
+        type="time"
+        value={taskTime}
+        onChange={(e) => setTaskTime(e.target.value)}
+      />
+      {/* Submit button */}
+      <button onClick={handleSubmit}>Submit</button>
+    </div>
+  );
 }
 
 export default TaskPopUp;
