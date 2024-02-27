@@ -1,4 +1,5 @@
 import React from "react";
+import "./SocialMediaCard.css"; // Import your CSS file
 
 function SocialMediaCard({ name, onClick }) {
   // Function to handle when the card is clicked
