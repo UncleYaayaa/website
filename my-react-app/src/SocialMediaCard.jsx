@@ -9,8 +9,13 @@ function SocialMediaCard({ name, onClick }) {
 
   return (
     <div className="social-media-card" onClick={handleClick}>
-      <h3>{name}</h3>
-      {/* You can add more content or styling for the social media card */}
+      <img
+        className="card-image"
+        src="https://via.placeholder.com/200"
+        alt="profile picture"
+      ></img>
+      <h2 className="card-title">Yaseen</h2>
+      <p className="card-text">I create Websites and Play Games</p>
     </div>
   );
 }

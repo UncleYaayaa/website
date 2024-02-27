@@ -5,11 +5,11 @@ import TaskPopUp from "./TaskPopUp.jsx";
 function App() {
   return (
     <div className="app">
-      <Calendar />
       <SocialMediaCard name="Instagram" />
       <SocialMediaCard name="YouTube" />
       <SocialMediaCard name="Twitter" />
       {/* Add other social media cards */}
+      <Calendar />
       <TaskPopUp socialMedia="Instagram" />
       <TaskPopUp socialMedia="YouTube" />
       <TaskPopUp socialMedia="Twitter" />
