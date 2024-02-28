@@ -2,6 +2,7 @@ import Calendar from "./Calendar.jsx";
 import SocialMediaCard from "./SocialMediaCard.jsx";
 import TaskPopup from "./TaskPopUp.jsx";
 import React, { useState } from "react";
+import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -12,11 +13,15 @@ function App() {
 
   return (
     <div className="app">
-      <SocialMediaCard socialMedia="Facebook" addTask={addTask} />
-      <SocialMediaCard socialMedia="Twitter" addTask={addTask} />
-      <SocialMediaCard socialMedia="YouTube" addTask={addTask} />
-      {/* Add other social media cards */}
-      <Calendar />
+      <div className="social-media-panel">
+        <SocialMediaCard socialMedia="Facebook" addTask={addTask} />
+        <SocialMediaCard socialMedia="Twitter" addTask={addTask} />
+        <SocialMediaCard socialMedia="YouTube" addTask={addTask} />
+        {/* Add other social media cards */}
+      </div>
+      <div className="calendar-panel">
+        <Calendar />
+      </div>
       <TaskPopup tasks={tasks} />
     </div>
   );
