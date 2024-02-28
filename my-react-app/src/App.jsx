@@ -3,17 +3,20 @@ import SocialMediaCard from "./SocialMediaCard.jsx";
 import TaskPopUp from "./TaskPopUp.jsx";
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+
+  const addTask = (task) => {
+    setTasks([...tasks, task]);
+  };
+
   return (
     <div className="app">
-      <SocialMediaCard name="Instagram" />
-      <SocialMediaCard name="YouTube" />
-      <SocialMediaCard name="Twitter" />
+      <SocialMediaCard socialMedia="Facebook" addTask={addTask} />
+      <SocialMediaCard socialMedia="Twitter" addTask={addTask} />
+      <SocialMediaCard socialMedia="YouTube" addTask={addTask} />
       {/* Add other social media cards */}
       <Calendar />
-      <TaskPopUp socialMedia="Instagram" />
-      <TaskPopUp socialMedia="YouTube" />
-      <TaskPopUp socialMedia="Twitter" />
-      {/* Add other task pop-ups */}
+      <TaskPopup tasks={tasks} />
     </div>
   );
 }
