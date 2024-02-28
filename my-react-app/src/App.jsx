@@ -1,6 +1,6 @@
 import Calendar from "./Calendar.jsx";
 import SocialMediaCard from "./SocialMediaCard.jsx";
-import TaskPopUp from "./TaskPopUp.jsx";
+import TaskPopup from "./TaskPopUp.jsx";
 import React, { useState } from "react";
 
 function App() {
