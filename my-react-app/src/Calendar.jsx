@@ -28,11 +28,12 @@ function Calendar() {
 
     while (day <= endDate) {
       for (let i = 0; i < 7; i++) {
+        const isDisabled = !isSameMonth(day, firstDayOfMonth);
         days.push(
           <div
-            className={`calendar-day ${
-              !isSameMonth(day, firstDayOfMonth) ? "disabled" : ""
-            } ${isSameDay(day, currentDate) ? "selected" : ""}`}
+            className={`calendar-day ${isDisabled ? "disabled" : ""} ${
+              isSameDay(day, currentDate) ? "selected" : ""
+            }`}
             key={day}
           >
             {format(day, "d")}
@@ -74,16 +75,23 @@ function Calendar() {
   return (
     <div className="calendar">
       <div className="month-header">
-        <button onClick={goToPreviousMonth}>Previous</button>
+        <button className="prev-button" onClick={goToPreviousMonth}>
+          Previous
+        </button>
         <h2>
           {currentDate.toLocaleString("default", {
             month: "long",
             year: "numeric",
           })}
         </h2>
-        <button onClick={goToNextMonth}>Next</button>
-        <button onClick={goToToday}>Today</button> {/* Today button */}
+        <button className="today-button" onClick={goToToday}>
+          Today
+        </button>
+        <button className="next-button" onClick={goToNextMonth}>
+          Next
+        </button>
       </div>
+
       {/* Render the calendar grid */}
       <div className="calendar-grid">{renderCalendarGrid()}</div>
     </div>
