@@ -1,8 +1,9 @@
 import Calendar from "./Calendar.jsx";
 import SocialMediaCard from "./SocialMediaCard.jsx";
 import TaskPopup from "./TaskPopUp.jsx";
+import TaskManager from "./TaskManager";
 import React, { useState } from "react";
-import "./App.css";
+import "./index.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -22,6 +23,7 @@ function App() {
       <div className="calendar-panel">
         <Calendar />
       </div>
+      <TaskManager />
       <TaskPopup tasks={tasks} />
     </div>
   );
