@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SocialMediaCard.css"; // Import your CSS file
+import "./SocialMediaCard.css";
 
 function SocialMediaCard({ socialMedia, addTask }) {
   const [taskInput, setTaskInput] = useState("");
@@ -46,17 +46,5 @@ function SocialMediaCard({ socialMedia, addTask }) {
     </div>
   );
 }
-/*  return (
-    <div className="social-media-card" onClick={handleClick}>
-      <img
-        className="card-image"
-        src="https://via.placeholder.com/200"
-        alt="profile picture"
-      ></img>
-      <h2 className="card-title">Yaseen</h2>
-      <p className="card-text">I create Websites and Play Games</p>
-    </div>
-  );
-} */
 
 export default SocialMediaCard;

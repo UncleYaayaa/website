@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Calendar.css"; // Import your CSS file
+import "./Calendar.css";
 import {
   format,
   startOfMonth,

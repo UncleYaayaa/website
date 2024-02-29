@@ -5,16 +5,6 @@
     grid-gap: 20px; /* Adjust the gap between components */
   }
   
-  .social-media-panel {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Adjust the space between SocialMediaCard components */
-  }
-  
-  .calendar-panel {
-    /* Optional: Adjust styling for the calendar panel */
-  }
-  
   .task-popup {
     position: fixed;
     bottom: 0;
