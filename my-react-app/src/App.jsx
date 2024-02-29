@@ -18,7 +18,9 @@ function App() {
         <SocialMediaCard socialMedia="Facebook" addTask={addTask} />
         <SocialMediaCard socialMedia="Twitter" addTask={addTask} />
         <SocialMediaCard socialMedia="YouTube" addTask={addTask} />
-        {/* Add other social media cards */}
+        <SocialMediaCard socialMedia="Facebook" addTask={addTask} />
+        <SocialMediaCard socialMedia="Twitter" addTask={addTask} />
+        <SocialMediaCard socialMedia="YouTube" addTask={addTask} />
       </div>
       <div className="calendar-panel">
         <Calendar />
