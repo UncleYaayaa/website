@@ -1,3 +1,9 @@
+.social-media-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Wrap the items if they exceed the container width */
+}
+
 .social-media-card{
     border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
@@ -5,7 +11,7 @@
     padding: 20px;
     margin: 10px;
     text-align: center;
-    max-width: 250px;
+    width: 200px;
     display: inline-block;
   }
   
