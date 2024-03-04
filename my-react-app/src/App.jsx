@@ -9,7 +9,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const addTask = (task) => {
-    setTasks([...tasks, task]);
+    setTasks([...tasks, newTask]);
   };
 
   return (
@@ -26,6 +26,7 @@ function App() {
         <Calendar />
       </div>
       <TaskManager />
+      <TaskManager tasks={tasks} setTasks={setTasks} />
       <TaskPopup tasks={tasks} />
     </div>
   );
