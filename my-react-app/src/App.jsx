@@ -9,7 +9,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const addTask = (task) => {
-    setTasks([...tasks, newTask]);
+    setTasks([...tasks, task]);
   };
 
   return (
@@ -25,7 +25,6 @@ function App() {
       <div className="calendar-panel">
         <Calendar />
       </div>
-      <TaskManager />
       <TaskManager tasks={tasks} setTasks={setTasks} />
       <TaskPopup tasks={tasks} />
     </div>
